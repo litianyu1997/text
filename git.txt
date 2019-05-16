@@ -1,2 +1,72 @@
 git mv [文件名1] [文件名2]
 重命名文件
+
+git mv [文件名] [新目录文件名]
+将文件移动到新目录下
+
+git chekcout HEAD -- [文件名]
+把文件恢复到最近的一次提交
+
+git checkout HEAD^ -- [文件名]
+把文件恢复到最近的一次提交的上一次提交
+
+git revert [id]
+恢复到[id]提交
+
+git reset --soft/hard/mixed
+soft 提交到了暂存区
+mixed 没有提交到暂存区
+hard 提交到了本地库
+
+git log --oneline --decorate --all
+查看所有分支上的提交
+
+git merge abort
+放弃合并
+
+git branch -m [分支名] [新分支名]
+重命名分支名
+
+git branch -d [分支名]
+删除分支
+
+git log --oneline -x
+只显示x条
+
+git log --oneline --author="x"
+只显示x的提交
+
+git log --oneline --grep='x'
+只显示备注带有x的提交
+
+git log --oneline --before='20xx-xx-xx'
+只显示20xx-xx-xx之前的提交
+
+git log --oneline --before='1 week'
+只显示一周以前的提交
+
+git log --oneline --graph
+显示图形效果
+
+git config --global alias.co checkout
+~/.gitconfig 查看
+global 全局
+把checkout 简化为 co （设置命令别名）
+vim~/.bash_profile
+alias gco='git checkout'
+
+git config --global core.excludesfile ~/.gitgonore-global
+vim~/.gitignore_global
+.DS_Store
+touch .Ds_Store
+ls
+git status
+告诉git在全局范围内忽略掉.DS——Store文件
+
+vim.gitignore
+*.log
+git add/commit -m
+touch access.log
+ls
+git status
+告诉git忽略掉.log的文件（不会取消跟踪已经被跟踪的文件）
