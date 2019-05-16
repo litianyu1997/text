@@ -70,3 +70,13 @@ touch access.log
 ls
 git status
 告诉git忽略掉.log的文件（不会取消跟踪已经被跟踪的文件）
+
+
+
+
+
+
+
+
+
+
