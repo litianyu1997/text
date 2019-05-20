@@ -104,6 +104,20 @@ settings.properties
 *.b
 !a.b
 忽略以.b结尾的文件，a.b除外
+/TODO 仅忽略根目录下的TODO文件
+但不包括子目录下的TODO文件
+/*/TODO 忽略根目录下一个子目录下的TODO文件
+/**/TODO  忽略目录下所有层次的TODO文件
+build/ 忽略build目录下的所有文件
+
+mkdir mydir && cd my dir
+先执行，后执行
+先创建文件夹，后进入文件夹
+
+git branch -d [分支名]
+删除分支
+（当前处于该分支上不能删除该分支）
+（该分支上有修改并未被合并时会提示可以用git branch -D [分支名] 删除 或合并后删除）
 
 
 
